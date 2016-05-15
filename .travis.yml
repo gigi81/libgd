@@ -80,4 +80,4 @@ deploy:
   on:
     repo: gigi81/libgd
     branch: travis
-    condition: "$TRAVIS_OS_NAME == osx"
+    condition: "$TRAVIS_OS_NAME == osx && $CC = clang"
