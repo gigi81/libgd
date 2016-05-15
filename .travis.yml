@@ -75,7 +75,8 @@ deploy:
   provider: releases
   api_key:
     secure: WqzLc++8GwcibOSaEsdXbOgYWHHhOxmGXb1yk1iUiWgYIBeS+EWOi3UsQB8ZyoGAj7YyFCO3oLlwunAtOVdEYZmyrIktIS/YEEiqFqigmfFYhdLHi0JJT7eiMaNPloK1r2jTVVJyNx8U4zNsiHG6zHBoGUOEie/uNGwnLhtVvt8EMFSAH0qxaTl4WGllq/NlJhI2a0xdXry92/9k9Wc4pzN+k2TYNPAShR8yVD0z/1CuL8gY9ogus8+mn6V4PtBTdY2nNDYLcXgowjCzdYV3KFMdSCi3aG0WKxINyFh4a5GenfgpPsGV3Yn0epIVsDxlgsUOQIXUCqKjXYRgWWnO9R1zo4XtV5LYwjEcm8cas3s0JgFciZDY6Thwef2ccL/LrMxafluVIJWI7PUCS6tDx0lNTk+O4CuqB1N/X0EJbOrozyhg1Bwp04tIDTkT2/LloHmqQK/wokxMnaJ4aGjtqqvdYb3PinjAhyHk+/TJsgCwBBYHzFN7JxqMbofdPn/3NA2VS0JyNcNT0EulGEzOui9Weg6lBpyXC+YmRi6uvgIfhvPPMYMoNZcqpZXJYQW3RyVF5TAJ2PIsmAoIg9qwQET8pHyYzDyp2k6Z8m3WbsJ8wcqMwe4XVewjGvWexOCXfiJ4sR+5fzpnhNG6fAInL8uU7vfz9QnTu8IMae3MWtA=
-  file: libgd.dylib
+  file: bin/libgd.dylib
   on:
     repo: gigi81/libgd
     branch: travis
+    condition: "$TRAVIS_OS_NAME == osx"
