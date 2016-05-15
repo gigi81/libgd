@@ -63,6 +63,8 @@ compare_builds() {
 build_osx() {
 	v ./thumbs.sh make
 	v ./thumbs.sh check
+	v ls
+	v ls -lF ./Bin
 }
 
 main() {
